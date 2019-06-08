@@ -5,114 +5,33 @@
 	</head>
 	<body>
 		<div class="container">
-    		<div class="blurb">
-        		<div>
+    		<div class="blurb" style="width:750px">
 				<h2> Description </h1>
 					<p> A 2 player, augmented-reality, battle-simulator. 2 Players can engage in fantasy themed combat utilizing 3 different unit types
 					on their Android devices. Using Google's ARcore libraries players will lead their armies into combat on a world placed into their own 
-					environment. Players can watch the combat unfold up close or from a distance as they move around the 3D world.
+					environment. Players can watch the combat unfold up close or from a distance as they move around the 3D world. 
 					</p>
+					<h3>Features</h3>
+					<ul>
+						<li>Alternate Reality game world</li>
+						<li>Android device support</li>
+						<li>2 player networked multiplayer</li>
+						<li>3 distinct unit types</li>
+						<li>Lobby system for finding games</li>
+						<li>Economy based unit placement</li>
+					</ul>
+					<h3>Influences</h3>
+					<p>We were influenced to build a real time strategy game by some of the more famous series in the genre such as the Total War series 
+					and Age of Empires. We were also influenced by the challenge of bringing some aspects of the genre into an AR environment. Above all 
+					we wanted to make a game that got people's attention. Once it had their attention, it would show them something they hadn't seen before,
+					a strategy game, where the player is the camera. Giving people the perspective of hovering over the board, and controlling armies in 
+					major clashes is something the strategy genre has always tried to do. AR gives people to live out this ability in their own world. For us
+					making this game was a first step in that direction. </p>
+				
+				<h2> Development Log </h2>
+				<a href="devlog.html"><b>Development Log</b></a>		
 			</div>
-		
 		</div>
-			
-			<h2> Development Log </h2>
-				<h3> May 6th, 2019 </h3> 
-					<h4> Completed: </h4>
-						<li> Paper prototype (Mitch) </li>
-						<li> Development log (Everyone) </li>
-						<li> Multiplayer basic functionality (Jacob) </li>
-						<li> Augmented Reality basic functionality (Jacob) </li>
-						<li> World generation (Jacob) </li>
-						<li> Cube animation controller (Torren) </li>
-					<h4> Working on: </h4>
-						<li> Syncing players (Jacob) </li>
-						<li> Animation on units (Torren) </li>
-						<li> Swarm mechanics (Mitch) </li>
-					<h4> Backlog: </h4>
-						<li> Unit interaction </li>
-						<li> Gesture implementation  </li>
-						<li> Win/loss conditions </li>
-					<h4> Analysis of Playtesting: </h4>
-						<li> Bug with scaling </li>
-					<h4> Obstacles: </h4>
-						<li> Other classes </li>
-						<li> Work time and stress </li>
-						<li> Mitch is moving </li>
-					<h4> Reflection of Process: </h4>
-						<p> We discuss what we are going to work on and do it. We ask each other for 
-							help with our parts when we need it. It is going well so far. </p>
-				<h3> May 14th, 2019 </h3>
-					<h4> Completed: </h4>
-						<li> Multiplayer Lobby + Cloud Anchor phase finished (Jacob) </li>
-						<li> World placement with scalable interface (Jacob) </li>
-						<li> Framework for client-side unit spawning using UNET including UI interface (Jacob) </li>
-						<li> Live-debugging UI element (Jacob) </li>
-						<li> Framework for game state transitions using UNET server to client communications (Jacob) </li>
-						<li> 12-unit "mob" spawning script (Jacob) </li>
-						<li> idle patrol pattern for mob (Jacob) </li>
-					<h4> Working On: </h4>
-						<li> Animation and Models for units (Torren) <li>
-						<li> Unit control Scheme/UI - UNET communications for combat (Jacob)</li>
-					<h4> Backlog: </h4>
-						<li> Unit interaction </li>
-						<li> Gesture implementation  </li>
-						<li> Win/loss conditions </li>
-					<h4> Analysis of Playtesting: </h4>
-						<p> To test server/client interactions, a combination of arcore's live preview within unity and usage of live feed back in the game was needed. </p>
-				<h3> May 16th, 2019 </h3>
-					<h4> Completed: </h4>
-						<li> Animation Controller for attacking + movement (Torren) </li>
-						<li> Wizard model and base models + animations for each (Torren) </li>
-						<li> Groups of pegmen that move together (Mitch) </li>
-						<li> Dynamic colliders that can easily be changed based on blob size (Mitch) </li>
-						<li> Prototypes displaying some of our main mechanics (Everyone) </li>
-					<h4> Working On: </h4>
-						<li> Melee unit models and Fast unit models + animations (Torren) </li>
-						<li> Incorporating unit models into overall game (Torren) </li>
-						<li> Finite state transition scripts associated with unit interaction and colliders. (Mitch) </li>
-						<li> All working on items from May 14th
-					<h4> Backlog: </h4>
-						<li> Same as May 14th </h4>
-					<h4> Analysis of Playtesting </h4>
-						<p> Watching how models animation logic acts in actual game will need to be done when the models are incorporated into the game. </p>
-				<h3> May 30th, 2019 </h3>
-					<h4> Completed </h4>
-						<li> Alpha playtest feedback discussion (All)</li>
-						<li> Combat improvements/redesign (Jacob) </li>
-						<li> Death animations for blob units (Torren) </li>
-						<li> Mage ice spell animations and incorporation into combat (Mitch) </li>
-					<h4> Working On: </h4>
-						<li> Getting ready for beta tests (all) </li> 
-						<li> Continued improvements to unit interactions/combat (Jacob) </li>
-						<li> Spawn zone restrictions /number of unit restrictions (Torren) </li>
-						<li> Integrating mage ice spell into combat (Mitch) </li>
-					<h4> Backlog </h4>
-						<li> Win conditions </li>
-						<li> unit strengths/weaknesses </li>
-				<h3> June 3rd, 2019 </h3>
-					<h4> Completed </h4>
-						<li> Beta Playtest discussion/decisions </li>
-						<li> Combat synchronization and world state synch imrpovements (Jacob) </li>
-						<li> Unit balance (Jacob) </li>
-						<li> Unit spawn restrictons/economy (Jacob) </li>
-						<li> Spawn zones (Torren) </li>
-						<li> Terrain Design (Torren) </li>
-						<li> Hints/Tutorial menu (Mitchell) </li>
-						<li> Mage ice spell attack range/damage (Mitchell) </li>
-					<h4> Working On </h4>
-						<li> Balancing unit damage </li> 
-						<li> Nerfing wizard attack range </li>
-						<li> Postmortem </li>
-						<li> Trailer/Visual
-					<h4> Beta Feedback </h4>
-						<p> Feedback from the beta test was very positive! People really liked the novelty of the AR
-						    and enjoyed the look of the game. People had very good criticisms related to unit management. 
-						    It is hard to distnguish between teams for peasant units. Tutorilization is lacking and needs to 
-						    be implemented. Win conditions would help with the pacing of the game. From what we noticed the initial 
-						    setup can be confusing, as we had to walk people through. The beta tests left us feeling there 
-							was a lot of positive reception for the game. </p>
-			
 			<div>
 				<div>
 					<h2> Screenshots </h2>
